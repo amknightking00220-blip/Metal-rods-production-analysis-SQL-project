@@ -43,7 +43,22 @@ Purpose:
 Tracks the count of defective rods per batch.
 
 Insights:
-Some batches produce unusually high numbers of defective rods, suggesting intermittent problems in the manufacturing process
+R CHART – 
+The process variation within batches is mostly under statistical control, with a few batches showing unusually high internal variation.
+
+
+X̄ CHART –
+The average diameter is generally stable; however, one batch shows a clear out-of-control signal, indicating a special cause such as incorrect machine setting, calibration
+error, or operator mistake.
+
+
+P CHART –
+The defect proportion shows high batch-to-batch variability, with multiple batches exceeding the upper control limit. This indicates the defect generation process is not statistically stable and may be influenced by intermittent assignable causes.
+Since X̄ and R charts are mostly stable, defects are not strongly driven by diameter variation alone, suggesting other quality factors (surface finish, cracks, handling damage).
+
+
+NP CHART – 
+The number of defectives per batch frequently exceeds the expected limit, confirming instability observed in the P chart. This reinforces the presence of sporadic quality failures rather than random variation.
 
 
 
