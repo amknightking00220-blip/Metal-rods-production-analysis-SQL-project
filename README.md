@@ -26,19 +26,19 @@ CSV Dataset – Simulated manufacturing inspection data
 SPC Methodology – X̄, R, P, and NP control charts
 
 Control Charts Used & Interpretation :
- X̄ (X-Bar) Chart – Average Diameter Control
+ X̄ (X-Bar) Chart – Average Rod Diameter Over Time
 Purpose:
 Monitors whether the average rod diameter remains stable across batches.
 
-R Chart – Within-Batch Variation
+R Chart – Variation Within Each Batch
 Purpose:
 Tracks variation within each batch to ensure consistency.
 
-P Chart – Defect Proportion
+P Chart – Defect Percentage per Batch
 Purpose:
 Monitors the percentage of defective rods per batch.
 
-NP Chart – Number of Defectives
+NP Chart – Total Defects per Batch
 Purpose:
 Tracks the count of defective rods per batch.
 
@@ -61,6 +61,44 @@ NP CHART –
 The number of defectives per batch frequently exceeds the expected limit, confirming instability observed in the P chart. This reinforces the presence of sporadic quality failures rather than random variation.
 
 
+MATHEMATICAL Formulas used in charts :
+
+R Chart  :    
+
+R = Xmax - Xmin
+UCL(upper control limit) = D4​×Rˉ
+LCL(lower control limit) = D3​×Rˉ
+
+
+X̄ Chart :
+
+Xˉ= ∑X/n​
+UCL=Xˉ+A2×Rˉ
+LCL=Xˉ−A2×Rˉ
+
+
+p chart :
+
+p   = Sample Size / Number of Defective Items
+pˉ  = Total Units / Total Defects
+UCL = p̄ + 3 * √( (p̄ * (1 - p̄)) / n )
+LCL = p̄ - 3 * √( (p̄ * (1 - p̄)) / n )
+
+np chart :
+
+np  = n*pˉ
+UCL = np + 3​√npˉ(1 - p̄)
+LCL = np - 3​√npˉ(1 - p̄)
+        ​
+
+
+	​
+
+	​
+​
+
+
+	​
 
 
 
